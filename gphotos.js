@@ -116,6 +116,7 @@ function getUrlsFromScrape(url){
         if(found !== null){
           found.forEach(function(url){
             url = url.replace(/['"]+/g, '');
+            url += '=w1920-no';
             urls.push(url);
           })
         }
